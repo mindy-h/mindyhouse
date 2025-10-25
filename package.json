@@ -8,9 +8,22 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "deploy": "npm run build && cp -r dist/* docs/ && git add docs && git commit -m 'Deploy' && git push"
+},
+
+
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  
+"homepage": {
+  "https://mindy-h.github.io/mindyhouse"}
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
